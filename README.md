@@ -20,8 +20,7 @@ This project is a solution to the  on Frontend Mentor. The goal was to build a r
 ![Preview](screenshot.png)
 
 ## Live Demo
-
-
+https://echo-script0.github.io/result-summary-component/
 
 ## Author
 Aisha Adeyemo
