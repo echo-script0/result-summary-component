@@ -173,16 +173,9 @@ body {background-color: hsl(221, 100%, 96%);
   width: calc(100% - 60px);
   border: none;
   border-radius: 30px;
-  background: linear-gradient(90deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-color: hsl(224, 30%, 27%);
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, opacity 0.2s;
-}
+  cursor: pointer;}
 
-.continue-btn:hover {
-  background: hsl(224, 30%, 27%); /* Change the background color on hover */
-  color: #fff; /* Ensure the text remains visible */
-  opacity: 1; /* Fully opaque */
-}
