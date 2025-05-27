@@ -1,0 +1,188 @@
+body {background-color: hsl(221, 100%, 96%);
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100vh; /* Full viewport height */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      overflow: hidden;}
+
+.container { background-color:hsl(0, 0%, 100%) ; /* Box background color */
+             width: 600px; /* The size you want the box to be */
+             border-radius: 30px; /* Optional; for rounded edges */
+             display: flex;
+             flex-direction: row;
+             padding: 0%;
+             height: 400px; /* full container height */
+             overflow: hidden;
+             font-family: 'Hanken Grotesk', sans-serif;}
+
+
+ .container .container-left {background-color: hsl(241, 93%, 62%);/* Left side background color */
+                              width: 50%; /* Adjust as needed */
+                              height: 100%; /* Full height of the container */
+                              border-radius: 30px; /* Rounded edges on all sides */
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: flex-start;
+                              align-items: center;}
+
+.container .your-result {color: hsl(241, 100%, 89%);
+                          font-size: 18px; /* Adjust as needed */
+                          margin-top: 30px; /* Space from the top */
+                          font-weight: 500;}
+
+.container .container-left .circle{ background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));;
+    width: 160px; /* Circle width */
+    height: 160px; /* Circle height */
+    border-radius: 50%; /* Makes it a circle */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Space from the top */
+    flex-direction: column;}
+
+.container .container-left .circle span.score {font-size: 48px;
+                                               color: hsl(0, 0%, 100%);
+                                               font-weight: 700;}
+
+.container .container-left .circle span.text {font-size: 13px;
+                                               color: hsl(241, 100%, 89%);
+                                               font-weight: 500;}
+
+.container .container-left .great {color: hsl(0, 0%, 100%);
+                                   font-size: 22px;
+                                   font-weight: 500;
+                                   margin-top: 20px;}
+
+.container .container-left .you {color:hsl(241, 68%, 83%);
+                                 font-size: 13.5px;
+                                 font-weight: 500;
+                                 margin-top: 10px;}
+
+.container .container-left .the {color:hsl(241, 68%, 83%);
+                                 font-size: 13.5px;
+                                 font-weight: 500;}
+
+.container .container-left .these {color:hsl(241, 68%, 83%);
+                                 font-size: 13.5px;
+                                 font-weight: 500;}
+
+.container-right {
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.summary {
+  color: hsl(224, 30%, 27%);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 20px 30px;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 30px 0 30px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 0 18px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px 0 hsla(224, 30%, 27%, 0.03);
+}
+
+.summary-item .icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Example icon backgrounds (replace with your actual SVG paths) */
+.summary-item.reaction .icon {
+  background-image: url('icon-reaction.svg');
+}
+.summary-item.memory .icon {
+  background-image: url('icon-memory.svg');
+}
+.summary-item.verbal .icon {
+  background-image: url('icon-verbal.svg');
+}
+.summary-item.visual .icon {
+  background-image: url('icon-visual.svg');
+}
+
+.summary-item.reaction {
+  background: hsl(0, 100%, 97%);
+  color: hsl(0, 100%, 67%);
+}
+.summary-item.memory {
+  background: hsl(39, 100%, 96%);
+  color: hsl(39, 100%, 56%);
+}
+.summary-item.verbal {
+  background: hsl(166, 100%, 97%);
+  color: hsl(166, 100%, 37%);
+}
+.summary-item.visual {
+  background: hsl(234, 85%, 96%);
+  color: hsl(234, 85%, 45%);
+}
+
+.label {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.score-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.score-group .score {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.score-group .b {
+  color: hsl(224, 30%, 27%);
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.continue-btn {
+  margin: 30px 20px;
+  padding: 14px;
+  width: calc(100% - 60px);
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.continue-btn:hover {
+  background: hsl(224, 30%, 27%); /* Change the background color on hover */
+  color: #fff; /* Ensure the text remains visible */
+  opacity: 1; /* Fully opaque */
+}
