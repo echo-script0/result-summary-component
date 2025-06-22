@@ -17,7 +17,7 @@ This project is a solution to the  on Frontend Mentor. The goal was to build a r
 - Smooth color transitions and gradients for a modern look
 
 ### Screenshot
-![Preview](screenshot.png)
+![Preview](image.png)
 
 ## Live Demo
 https://echo-script0.github.io/result-summary-component/
