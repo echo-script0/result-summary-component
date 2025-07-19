@@ -19,7 +19,7 @@ body {background-color: hsl(221, 100%, 96%);
             
 
 
- .container .container-left {background-color: hsl(241, 93%, 62%);/* Left side background color */
+  .container-left {background-color: hsl(241, 93%, 62%);/* Left side background color */
                               width: 50%; /* Adjust as needed */
                               height: 100%; /* Full height of the container */
                               border-radius: 30px; /* Rounded edges on all sides */
@@ -182,4 +182,87 @@ body {background-color: hsl(221, 100%, 96%);
 
   .continue-btn:hover {background-color: hsl(241, 93%, 62%);
                        opacity: 1;}
+
+  @media screen and (max-width: 720px) {
+  body {
+    background: white;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    overflow: auto;
+  }
+
+  .container-left {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+  }
+
+  .container-left h3 {
+    font-size: 1rem;
+  padding-top: 20px;}
+
+  .circle {
+    width: 100px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .container-left h2 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+
+  .container-left p {
+    font-size: 1.9rem;
+    margin-top: 2px;
+  }
+
+  .container-right {
+    width: 100%;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+    height: auto;
+  }
+
+  .summary {
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+  padding-left: 20px;}
+
+  .summary-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 15px;
+  }
+
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .continue-btn {
+    margin-top: 20px;
+    width: 90%;
+    padding: 12px 0;
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 
